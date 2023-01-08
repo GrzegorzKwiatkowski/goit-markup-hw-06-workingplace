@@ -16,53 +16,55 @@
     />
   </head>
   <body>
-    <header class="nav-block nav-style container">
-      <nav>
-        <ul>
-          <li class="logo">
-            <a href="#">Web<span class="logo-color">Studio</span></a>
+    <header class="header">
+      <nav class="navigation">
+        <ul class="header__list-style">
+          <li class="logo logo-extend">
+            <a href="#">Web<span class="logo__color">Studio</span></a>
           </li>
-          <li><a href="#" class="hover studio-visual">Studio</a></li>
-          <li class="padding-portfolio">
-            <a href="portfolio.html" class="hover">Portfolio</a>
+          <li>
+            <a href="#" class="navigation__hfa navigation__underline">Studio</a>
           </li>
-          <li><a href="#" class="hover">Contacts</a></li>
+          <li class="navigation__inside-padding">
+            <a href="portfolio.html" class="navigation__hfa">Portfolio</a>
+          </li>
+          <li><a href="#" class="navigation__hfa">Contacts</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="navigation header__list-style">
         <li>
-          <div class="nav-icon">
-            <svg class="e-mail-svg" width="16" height="12">
+          <div class="contacts">
+            <svg class="contacts__e-mail-svg" width="16" height="12">
               <use href="images/icons.svg#icon-e-mail"></use>
             </svg>
-            <a class="icon" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           </div>
         </li>
-        <li class="padding-tel">
-          <div class="nav-icon">
-            <svg class="smartphone-svg" width="10px" height="16px">
+        <li class="contacts__inside-padding">
+          <div class="contacts">
+            <svg class="contacts__phone-svg" width="10px" height="16px">
               <use href="images/icons.svg#icon-smartphone"></use>
             </svg>
-            <a class="icon" href="tel:+1212-772-4150">+1 212-772-4150</a>
+            <a href="tel:+1212-772-4150">+1 212-772-4150</a>
           </div>
         </li>
       </ul>
     </header>
     <main>
-      <div class="background-position">
-        <section class="head-section-style section">
-          <h1>EFFECTIVE SOLUTIONS FOR<br />YOUR BUSINESS</h1>
-          <button data-modal-open class="button-style">
+      <div class="background">
+        <section class="background__gradient">
+          <h1 class="background__h1">
+            EFFECTIVE SOLUTIONS FOR<br />YOUR BUSINESS
+          </h1>
+          <button data-modal-open class="main-button main-button-extend">
             Request our service
           </button>
         </section>
       </div>
-      <section class="info-section-style section">
-        <ul class="container">
+      <section class="info-section info-section--p section__padding">
+        <ul class="info-section__list-style">
           <li>
-            <div class="info-icon-background">
+            <div class="info-section__svg-background">
               <svg width="65" height="70">
                 <use href="images/icons.svg#icon-antenna"></use>
               </svg>
@@ -74,7 +76,7 @@
             </p>
           </li>
           <li>
-            <div class="info-icon-background">
+            <div class="info-section__svg-background">
               <svg width="66" height="70">
                 <use href="images/icons.svg#icon-clock"></use>
               </svg>
@@ -86,7 +88,7 @@
             </p>
           </li>
           <li>
-            <div class="info-icon-background">
+            <div class="info-section__svg-background">
               <svg width="70" height="70">
                 <use href="images/icons.svg#icon-diagram"></use>
               </svg>
@@ -98,12 +100,12 @@
             </p>
           </li>
           <li>
-            <div class="info-icon-background">
+            <div class="info-section__svg-background">
               <svg width="70" height="70">
                 <use href="images/icons.svg#icon-astronaut"></use>
               </svg>
             </div>
-            <h3>modern technologies</h3>
+            <h3>MODERN TECHNOLOGIES</h3>
             <p>
               We use innovative tools to solve assigned tasks. It's time to
               simplify work processes.
@@ -111,19 +113,19 @@
           </li>
         </ul>
       </section>
-      <section class="about-us-style section">
+      <section class="about-us">
         <h2>What we do</h2>
-        <ul class="container">
-          <li class="img-position">
+        <ul class="about-us__display">
+          <li>
             <img
               src="images/gr1.jpg"
               alt="working place1"
               width="370"
               height="294"
             />
-            <p class="text-about-us">Aplikacje komputerowe</p>
+            <p class="about-us__overlay">Aplikacje komputerowe</p>
           </li>
-          <li class="img-position">
+          <li>
             <img
               class="img-position"
               src="images/gr2.jpg"
@@ -131,31 +133,31 @@
               width="370"
               height="294"
             />
-            <p class="text-about-us">Aplikacje mobilne</p>
+            <p class="about-us__overlay">Aplikacje mobilne</p>
           </li>
-          <li class="img-position">
+          <li>
             <img
               src="images/gr3.jpg"
               alt="working place3"
               width="370"
               height="294"
             />
-            <p class="text-about-us">Rozwiązania graficzne</p>
+            <p class="about-us__overlay">Rozwiązania graficzne</p>
           </li>
         </ul>
       </section>
-      <section class="section-background img-size section">
+      <section class="our-team">
         <h2>Our Team</h2>
-        <ul class="container">
+        <ul class="our-team__container img-size">
           <li>
-            <figure class="white-box">
+            <figure class="our-team__person-bg">
               <img
                 src="images/christopher_walker.jpg"
                 alt="Christopher Walker"
               />
-              <figcaption class="font-style-figacaption">
+              <figcaption class="our-team__figacaption">
                 Christopher Walker
-                <div class="font-style-position">Product Designer</div>
+                <div class="our-team__position">Product Designer</div>
                 <div class="app-icons">
                   <svg width="20" height="20">
                     <use href="images/icons.svg#icon-instagram"></use>
@@ -180,11 +182,11 @@
             </figure>
           </li>
           <li>
-            <figure class="white-box">
+            <figure class="our-team__person-bg">
               <img src="images/kylie_evans.jpg" alt="Kylie Evans" />
-              <figcaption class="font-style-figacaption">
+              <figcaption class="our-team__figacaption">
                 Kylie Evans
-                <div class="font-style-position">Frontend Developer</div>
+                <div class="our-team__position">Frontend Developer</div>
                 <div class="app-icons">
                   <svg width="20" height="20">
                     <use href="images/icons.svg#icon-instagram"></use>
@@ -209,11 +211,11 @@
             </figure>
           </li>
           <li>
-            <figure class="white-box">
+            <figure class="our-team__person-bg">
               <img src="images/ryan_harris.jpg" alt="Ryan Harris" />
-              <figcaption class="font-style-figacaption">
+              <figcaption class="our-team__figacaption">
                 Ryan Harris
-                <div class="font-style-position">Marketing</div>
+                <div class="our-team__position">Marketing</div>
                 <div class="app-icons">
                   <svg width="20" height="20">
                     <use href="images/icons.svg#icon-instagram"></use>
@@ -238,11 +240,11 @@
             </figure>
           </li>
           <li>
-            <figure class="white-box">
+            <figure class="our-team__person-bg">
               <img src="images/tyler_moore.jpg" alt="Tyler Moore" />
-              <figcaption class="font-style-figacaption">
+              <figcaption class="our-team__figacaption">
                 Tyler Moore
-                <div class="font-style-position">UI Designer</div>
+                <div class="our-team__position">UI Designer</div>
                 <div class="app-icons">
                   <svg width="20" height="20">
                     <use href="images/icons.svg#icon-instagram"></use>
@@ -268,35 +270,35 @@
           </li>
         </ul>
       </section>
-      <section class="section">
+      <section class="companies">
         <h2>Nasi klienci</h2>
-        <ul class="container">
-          <li class="company-icons">
+        <ul class="companies__display">
+          <li class="company-icon">
             <svg width="106" height="60">
               <use href="images/icons.svg#icon-company-1"></use>
             </svg>
           </li>
-          <li class="company-icons">
+          <li class="company-icon">
             <svg width="106" height="60">
               <use href="images/icons.svg#icon-company-2"></use>
             </svg>
           </li>
-          <li class="company-icons">
+          <li class="company-icon">
             <svg width="106" height="60">
               <use href="images/icons.svg#icon-company-3"></use>
             </svg>
           </li>
-          <li class="company-icons">
+          <li class="company-icon">
             <svg width="106" height="60">
               <use href="images/icons.svg#icon-company-4"></use>
             </svg>
           </li>
-          <li class="company-icons">
+          <li class="company-icon">
             <svg width="106" height="60">
               <use href="images/icons.svg#icon-company-5"></use>
             </svg>
           </li>
-          <li class="company-icons">
+          <li class="company-icon">
             <svg width="106" height="60">
               <use href="images/icons.svg#icon-company-6"></use>
             </svg>
@@ -304,17 +306,22 @@
         </ul>
       </section>
     </main>
-    <footer class="footer-background footer-style">
-      <div class="container-footer">
-        <ul class="find-us-placement">
-          <li class="logo">
-            <a href="#">Web<span class="footer-logo-color">Studio</span></a>
+    <footer class="footer-style footer">
+      <div class="footer__container">
+        <ul class="footer__join-us footer-styl">
+          <li class="logo logo-extend">
+            <a href="#">Web<span class="footer__logo-color">Studio</span></a>
           </li>
-          <li><p class="find-us-style">Dołącz do nas</p></li>
-          <li><p class="sub-style">Zapisz się do newslettera</p></li>
+          <li><p class="footer__join-us__style">Dołącz do nas</p></li>
+          <li>
+            <p class="footer__join-us__style footer__join-us__style--padding">
+              Zapisz się do newslettera
+            </p>
+          </li>
         </ul>
-        <address class="address-padding">
-          <ul class="address-style">
+        <address>
+          <ul class="footer__address footer-styl">
+            <li></li>
             <div class="find-us-icons">
               <li>695 Park Ave, New York, NY 10065,<br />United States</li>
               <li class="find-us-icons-placment">
@@ -415,7 +422,7 @@
           <div class="checkbox-style">
             <label class="checkbox-btn">
               <input
-                class="checkbox-box-style"
+                class="checkbox-box-style btn-svg"
                 type="checkbox"
                 name="regulamin"
                 value="regulamin"
